@@ -41,7 +41,7 @@ class ProductoController extends Controller
         {
             $img = $request->file('img');
             $nombre = time()."_".$img->getClientOriginalName();
-            $img->move('images', $nombre);
+            $img->move('images2', $nombre);
         }
 
 
